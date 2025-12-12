@@ -28,7 +28,7 @@
                 <a href="/Mairie-ScrumLand/index.php" class="active">Accueil</a>
                 <a href="#">Vie locale</a>
                 <a href="#">Tourisme</a>
-                <a href="/Mairie-ScrumLand/Views/contactView.php">Contact</a>
+                <a href="/Mairie-ScrumLand/Views/contact.php">Contact</a>
             </nav>
         </div>
     </header>
