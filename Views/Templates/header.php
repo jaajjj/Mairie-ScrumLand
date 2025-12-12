@@ -27,7 +27,6 @@
                 </div>
             </a>
             
-<<<<<<< HEAD
             <!-- Navigation Principale -->
             <nav class="main-nav">
                 <ul class="nav-list">
@@ -124,17 +123,9 @@
 
                     <!-- 6. Contact -->
                     <li class="nav-item">
-                        <a href="<?php echo getenv('BASE_URL'); ?>Views/contactView.php" class="nav-link btn-contact">Contact</a>
+                        <a href="./contact" class="nav-link btn-contact">Contact</a>
                     </li>
                 </ul>
-=======
-            <!-- Navigation principale -->
-            <nav class="nav-links">
-                <a href="/Mairie-ScrumLand/index.php" class="active">Accueil</a>
-                <a href="#">Vie locale</a>
-                <a href="#">Tourisme</a>
-                <a href="/Mairie-ScrumLand/Views/contact.php">Contact</a>
->>>>>>> cc88580c5ff0984e46a7dbb1ac0e8eb2c0a84e0d
             </nav>
 
             <!-- Langues -->
