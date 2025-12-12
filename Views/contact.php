@@ -14,7 +14,7 @@ require_once __DIR__ . '/Templates/header.php';
         
         <!-- Colonne Gauche : Formulaire -->
         <div class="main-column">
-            <!-- <section class="bloc">
+            <section class="bloc">
                 <div class="bloc-header">
                     <h2>Formulaire de contact</h2>
                 </div>
@@ -71,8 +71,13 @@ require_once __DIR__ . '/Templates/header.php';
                         <button type="submit" class="btn btn-primary">Envoyer le message</button>
                     </form>
                 </div>
-            </section> -->
+            </section>
             <!-- Coordonnées -->
+        </div>
+
+        <!-- Colonne Droite : Infos Pratiques -->
+        <aside class="sidebar">
+
             <section class="bloc info-bloc">
                 <h3>📍 Coordonnées</h3>
                 <p><strong>Mairie de ScrumLand</strong><br>
@@ -84,13 +89,7 @@ require_once __DIR__ . '/Templates/header.php';
                     <li><i class="fas fa-envelope"></i> contact@scrumland.fr</li>
                 </ul>
             </section>
-        </div>
-
-        <!-- Colonne Droite : Infos Pratiques -->
-        <aside class="sidebar">
             
-            
-
             <!-- Horaires (Repris de l'accueil) -->
             <section class="bloc bloc-horaires">
                 <h3>🕒 Horaires d'ouverture</h3>
