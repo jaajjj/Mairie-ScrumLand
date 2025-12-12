@@ -1,50 +1,139 @@
 <?php 
-require_once 'views/templates/header.php';
+// Inclusion du header (adaptez le chemin si nécessaire selon votre point d'entrée index.php)
+require_once __DIR__ . '/Templates/header.php'; 
 ?>
 
-<main class="container-accueil">
-    <!-- Bloc Numéros d'urgence -->
-    <section class="bloc bloc-urgence">
-        <h2>Numéros d’urgence</h2>
-        <ul>
-            <li><strong>Urgences européennes (pompiers / secours)</strong> : 112</li>
-            <li><strong>Police</strong> : 17</li>
-            <li><strong>Samu</strong> : 15</li>
-            <li><strong>Mairie de ScrumLand</strong> : 01 23 45 67 89</li>
-        </ul>
-    </section>
+<!-- Hero Banner : Section visuelle d'accroche -->
+<section class="hero-banner">
+    <div class="hero-content">
+        <h1>Bienvenue à ScrumLand</h1>
+        <p>Terre de traditions, d'innovation et de nature.</p>
+        <a href="#actus" class="btn btn-primary">Découvrir notre ville</a>
+    </div>
+</section>
 
-    <!-- Bloc Présentation de la ville -->
-    <section class="bloc bloc-presentation">
-        <h2>Bienvenue à ScrumLand</h2>
-        <p>
-            ScrumLand est une commune dynamique qui met l’accent sur la collaboration,
-            l’innovation et la qualité de vie de ses habitants.
-        </p>
-        <p>
-            Retrouvez ici toutes les informations pratiques, les services municipaux
-            et les actualités de votre ville.
-        </p>
-    </section>
+<main class="container-principal">
+    
+    <!-- Colonne Principale : Présentation et Actualités -->
+    <div class="main-column">
+        
+        <!-- Bloc Présentation -->
+        <section class="bloc bloc-presentation">
+            <div class="bloc-header">
+                <h2>Le mot du Maire</h2>
+            </div>
+            <div class="bloc-content">
+                <p>
+                    <strong>ScrumLand</strong> est une commune dynamique qui met l’accent sur la collaboration,
+                    la préservation de notre patrimoine et la qualité de vie de ses habitants. 
+                    Située au cœur de la vallée verte, notre ville conjugue modernité et respect des traditions.
+                </p>
+                <div style="margin-top: 1.5rem; padding: 1rem; background-color: #f4f8f4; border-left: 4px solid var(--secondary-color); font-style: italic; color: var(--text-dark);">
+                    "Cultivons ensemble notre art de vivre, entre champs et innovation."
+                </div>
+            </div>
+        </section>
 
-    <!-- Bloc Fil d’actualité -->
-    <section class="bloc bloc-actus">
-        <h2>Fil d’actualité</h2>
-        <article class="actu">
-            <h3>Conseil municipal – 20 janvier</h3>
-            <p>Prochaine séance du conseil municipal à 18h à la salle des fêtes.</p>
-        </article>
-        <article class="actu">
-            <h3>Travaux rue des Sprints</h3>
-            <p>Des travaux de voirie auront lieu du 5 au 10 février. Merci de votre compréhension.</p>
-        </article>
-        <article class="actu">
-            <h3>Inscription aux activités périscolaires</h3>
-            <p>Les inscriptions pour le trimestre sont ouvertes sur l’espace familles.</p>
-        </article>
-    </section>
+        <!-- Fil d’actualité -->
+        <section class="bloc bloc-actus" id="actus">
+            <div class="bloc-header">
+                <h2>Actualités locales</h2>
+                <a href="#" style="font-size: 0.9rem; color: var(--secondary-color); font-weight: bold; text-transform: uppercase;">Voir tout &rarr;</a>
+            </div>
+            <div class="grid-actus">
+                <!-- Article 1 -->
+                <article class="card-actu">
+                    <div class="card-date">
+                        <span class="day">20</span>
+                        <span class="month">JAN</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Conseil municipal</h3>
+                        <p>Prochaine séance du conseil à 18h. Ordre du jour : Aménagement des espaces verts et rénovation de l'église.</p>
+                        <a href="#" class="read-more">Lire l'article &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="card-actu">
+                    <div class="card-date">
+                        <span class="day">05</span>
+                        <span class="month">FÉV</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Marché des Producteurs</h3>
+                        <p>Le marché mensuel aura lieu sur la place du village. Venez découvrir les produits de nos fermes locales.</p>
+                        <a href="#" class="read-more">Lire l'article &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="card-actu">
+                    <div class="card-date">
+                        <span style="font-size: 1.5rem;">∞</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Activités Nature & Loisirs</h3>
+                        <p>Les inscriptions pour les randonnées et ateliers jardinage sont ouvertes. Profitez du grand air !</p>
+                        <a href="#" class="read-more">Lire l'article &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Colonne Latérale (Sidebar) -->
+    <aside class="sidebar">
+        <!-- Numéros d'urgence -->
+        <section class="bloc bloc-urgence">
+            <h2>⚠️ Numéros d’urgence</h2>
+            <ul>
+                <li>
+                    <span class="label">Pompiers</span>
+                    <span class="number">18</span>
+                </li>
+                <li>
+                    <span class="label">Gendarmerie</span>
+                    <span class="number">17</span>
+                </li>
+                <li>
+                    <span class="label">Samu</span>
+                    <span class="number">15</span>
+                </li>
+                <li>
+                    <span class="label">Mairie (Standard)</span>
+                    <span class="number">01 23 45 67 89</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Horaires -->
+        <section class="bloc bloc-horaires">
+            <h2>🕒 Horaires d'ouverture</h2>
+            <div class="horaire-row">
+                <strong>Lundi - Vendredi</strong>
+                <span>08h30 - 17h30</span>
+            </div>
+            <div class="horaire-row">
+                <strong>Samedi matin</strong>
+                <span>09h00 - 12h00</span>
+            </div>
+            <div style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
+                📍 1 Place de l'Église<br>
+                75000 ScrumLand
+            </div>
+        </section>
+        
+        <!-- Widget Info Pratique -->
+         <section class="bloc" style="background: var(--bg-color); border: 1px dashed var(--secondary-color); text-align: center;">
+            <h3 style="font-size: 1.1rem; color: var(--secondary-color);">Collecte des déchets</h3>
+            <p style="font-size: 0.9rem;">Prochain passage (jaune) :</p>
+            <div style="font-weight: bold; font-size: 1.2rem; color: var(--primary-color); margin-top: 0.5rem;">Jeudi 25 Janvier</div>
+        </section>
+    </aside>
+
 </main>
 
-<?php
-require_once 'views/templates/footer.php';
+<?php 
+require_once __DIR__ . '/Templates/footer.php'; 
 ?>
