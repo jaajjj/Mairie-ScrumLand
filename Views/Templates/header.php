@@ -4,31 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mairie de ScrumLand</title>
-    <!-- Import de police : Merriweather pour les titres et Roboto pour le texte -->
+    <!-- Import de polices modernes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- Lien vers la feuille de style CSS -->
-    <!-- Note: Le chemin commence par /Mairie-ScrumLand/ pour être absolu depuis la racine du serveur -->
     <link rel="stylesheet" href="<?php echo getenv('BASE_URL'); ?>Assets/css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="navbar">
-            <!-- Logo avec lien vers l'accueil -->
-            <a href="/Mairie-ScrumLand/index.php" class="logo">
-                🌲 <span>Mairie de ScrumLand</span>
+    <!-- Header Moderne Full Width -->
+    <header class="site-header">
+        <div class="header-container">
+            
+            <!-- Logo Modernisé -->
+            <a href="<?php echo getenv('BASE_URL'); ?>index.php" class="logo">
+                <span class="logo-icon">🌲</span>
+                <div class="logo-text">
+                    <span class="ville">ScrumLand</span>
+                    <span class="label">Site officiel de la Mairie</span>
+                </div>
             </a>
             
-            <!-- Navigation principale -->
-            <nav class="nav-links">
-                <a href="/Mairie-ScrumLand/index.php" class="active">Accueil</a>
-                <a href="#">Vie locale</a>
-                <a href="#">Tourisme</a>
-                <a href="/Mairie-ScrumLand/Views/contactView.php">Contact</a>
+            <!-- Navigation Principale -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    
+                    <!-- 1. Accueil -->
+                    <li class="nav-item">
+                        <a href="<?php echo getenv('BASE_URL'); ?>index.php" class="nav-link">Accueil</a>
+                    </li>
+
+                    <!-- 2. Découvrir (Méga Menu) -->
+                    <li class="nav-item has-mega-menu">
+                        <button class="nav-link dropdown-trigger">Découvrir</button>
+                        <div class="mega-menu">
+                            <div class="mega-content">
+                                <div class="mega-column">
+                                    <h3>Patrimoine & Histoire</h3>
+                                    <ul>
+                                        <li><a href="#">Ville d’art et d’histoire</a></li>
+                                        <li><a href="#">Histoire de la commune</a></li>
+                                        <li><a href="#">Jumelage</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h3>Culture & Rayonnement</h3>
+                                    <ul>
+                                        <li><a href="#">Culture</a></li>
+                                        <li><a href="#">La ville en images</a></li>
+                                        <li><a href="#">Identité visuelle</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column highlight">
+                                    <div class="highlight-card">
+                                        <span class="icon">📸</span>
+                                        <p>Découvrez notre galerie photo interactive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 3. Mairie (Méga Menu) -->
+                    <li class="nav-item has-mega-menu">
+                        <button class="nav-link dropdown-trigger">Mairie</button>
+                        <div class="mega-menu">
+                            <div class="mega-content">
+                                <div class="mega-column">
+                                    <h3>Vie Démocratique</h3>
+                                    <ul>
+                                        <li><a href="#">Liste des élus</a></li>
+                                        <li><a href="#">Conseil Municipal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h3>Services & Démarches</h3>
+                                    <ul>
+                                        <li><a href="#">Démarches administratives</a></li>
+                                        <li><a href="#">Location de salles communales</a></li>
+                                        <li><a href="#">Bulletins municipaux</a></li>
+                                        <li><a href="#">Fil d'actualité</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 4. Vie Pratique (Méga Menu) -->
+                    <li class="nav-item has-mega-menu">
+                        <button class="nav-link dropdown-trigger">Vie Pratique</button>
+                        <div class="mega-menu">
+                            <div class="mega-content">
+                                <div class="mega-column">
+                                    <h3>Au Quotidien</h3>
+                                    <ul>
+                                        <li><a href="#">Menu de la cantine</a></li>
+                                        <li><a href="#">Liste des commerces</a></li>
+                                        <li><a href="#">Numéros d'urgence</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-column">
+                                    <h3>Temps Libre</h3>
+                                    <ul>
+                                        <li><a href="#">Vie sportive & loisirs</a></li>
+                                        <li><a href="#">Page associative</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 5. Agenda -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Agenda</a>
+                    </li>
+
+                    <!-- 6. Contact -->
+                    <li class="nav-item">
+                        <a href="<?php echo getenv('BASE_URL'); ?>Views/contactView.php" class="nav-link btn-contact">Contact</a>
+                    </li>
+                </ul>
             </nav>
+
+            <!-- Langues -->
+            <div class="header-tools">
+                <a href="#" class="lang-link active">FR</a>
+                <span class="sep">|</span>
+                <a href="#" class="lang-link">EN</a>
+            </div>
+
         </div>
     </header>
