@@ -10,4 +10,7 @@ switch($page) {
     case 'accueil':
         require 'Views/accueil.php';
         break;
+    case 'contact':
+        require 'Views/contact.php';
+        break;
 }

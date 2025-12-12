@@ -432,6 +432,7 @@ footer {
     text-align: center;
     color: #5c7c66;
 }
+.bloc-horaires h3 { color: #ffc107; }
 
 .copyright a { color: #8fae96; }
 .copyright a:hover { color: var(--white); text-decoration: underline; }

@@ -19,16 +19,16 @@
     <header>
         <div class="navbar">
             <!-- Logo avec lien vers l'accueil -->
-            <a href="/Mairie-ScrumLand/index.php" class="logo">
+            <a href="./" class="logo">
                 🌲 <span>Mairie de ScrumLand</span>
             </a>
             
             <!-- Navigation principale -->
             <nav class="nav-links">
-                <a href="/Mairie-ScrumLand/index.php" class="active">Accueil</a>
+                <a href="./">Accueil</a>
                 <a href="#">Vie locale</a>
                 <a href="#">Tourisme</a>
-                <a href="/Mairie-ScrumLand/Views/contact.php">Contact</a>
+                <a href="./contact">Contact</a>
             </nav>
         </div>
     </header>
