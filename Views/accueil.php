@@ -3,13 +3,51 @@
 require_once __DIR__ . '/Templates/header.php'; 
 ?>
 
-<!-- Hero Banner : Section visuelle d'accroche -->
-<section class="hero-banner">
-    <div class="hero-content">
-        <h1>Bienvenue à ScrumLand</h1>
-        <p>Terre de traditions, d'innovation et de nature.</p>
-        <a href="#actus" class="btn btn-primary">Découvrir notre ville</a>
-    </div>
+<!-- Carrousel d'images -->
+<section class="hero-carousel">
+            <div class="carousel-track">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <img src="<?php echo $baseUrl ?>assets/img/ScrumLandLandscape.jpg" alt="Vue panoramique de ScrumLand" class="carousel-image">
+                    <div class="overlay"></div>
+                    <div class="carousel-content">
+                        <h2>Découvrez ScrumLand</h2>
+                        <p>Située au cœur de la région, ScrumLand allie modernité et tradition avec de nombreux espaces verts et des infrastructures modernes. Aujourd'hui, notre commune est un exemple de développement harmonieux avec nos 12400 habitants.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="<?php echo $baseUrl ?>assets/img/ScrumLandLandscape2.jpg" alt="Parc et espaces verts" class="carousel-image">
+                    <div class="overlay"></div>
+                    <div class="carousel-content">
+                        <h2>Un Engagement Durable</h2>
+                        <p>Des espaces verts préservés et un engagement fort pour le développement durable et le bien-être de tous les habitants. En 2024, nous avons fait pousser 2500 arbres afin de lutter contre le réchauffement climatique.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="<?php echo $baseUrl ?>assets/img/ScrumLandLandscape3.jpg" alt="Centre-ville dynamique" class="carousel-image">
+                    <div class="overlay"></div>
+                    <div class="carousel-content">
+                        <h2>Une Vie Associative Riche</h2>
+                        <p>La ville propose un tissu associatif riche, des événements réguliers et des services de proximité pour tous. Du foot au yoga, nous avons le nécessaire afin de s'épanouir pleinement.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="nav-btn prev" aria-label="Image précédente">&#10094;</button>
+            <button class="nav-btn next" aria-label="Image suivante">&#10095;</button>
+
+            <!-- Dots -->
+            <div class="carousel-dots">
+                <button class="dot active" aria-label="Aller à la slide 1"></button>
+                <button class="dot" aria-label="Aller à la slide 2"></button>
+                <button class="dot" aria-label="Aller à la slide 3"></button>
+            </div>
 </section>
 
 <main class="container-principal">
@@ -137,3 +175,72 @@ require_once __DIR__ . '/Templates/header.php';
 <?php 
 require_once __DIR__ . '/Templates/footer.php'; 
 ?>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const nextButton = document.querySelector('.nav-btn.next');
+            const prevButton = document.querySelector('.nav-btn.prev');
+            const dotsNav = document.querySelector('.carousel-dots');
+            const dots = Array.from(dotsNav.children);
+            
+            let currentIndex = 0;
+            let autoPlayInterval;
+
+            // Fonction pour changer de slide
+            const updateCarousel = (targetIndex) => {
+                // Gestion des limites (boucle infinie)
+                if (targetIndex < 0) {
+                    targetIndex = slides.length - 1;
+                } else if (targetIndex >= slides.length) {
+                    targetIndex = 0;
+                }
+
+                // Changer la classe active sur les slides
+                const currentSlide = document.querySelector('.carousel-slide.active');
+                currentSlide.classList.remove('active');
+                slides[targetIndex].classList.add('active');
+
+                // Changer la classe active sur les dots
+                const currentDot = document.querySelector('.dot.active');
+                currentDot.classList.remove('active');
+                dots[targetIndex].classList.add('active');
+
+                currentIndex = targetIndex;
+            };
+
+            // Event Listeners
+            nextButton.addEventListener('click', () => {
+                updateCarousel(currentIndex + 1);
+                resetAutoPlay();
+            });
+
+            prevButton.addEventListener('click', () => {
+                updateCarousel(currentIndex - 1);
+                resetAutoPlay();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    updateCarousel(index);
+                    resetAutoPlay();
+                });
+            });
+
+            // Autoplay (changement automatique toutes les 5 secondes)
+            const startAutoPlay = () => {
+                autoPlayInterval = setInterval(() => {
+                    updateCarousel(currentIndex + 1);
+                }, 5000);
+            };
+
+            const resetAutoPlay = () => {
+                clearInterval(autoPlayInterval);
+                startAutoPlay();
+            };
+
+            // Démarrer l'autoplay
+            startAutoPlay();
+        });
+    </script>
