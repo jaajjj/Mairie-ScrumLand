@@ -6,7 +6,7 @@
                 <p>Au service des habitants depuis 1842.</p>
                 <p style="margin-top: 1rem;">
                     📍 1 Place de l'Église<br>
-                    75000 ScrumLand
+                    65000 ScrumLand
                 </p>
             </div>
             <div class="footer-col">
