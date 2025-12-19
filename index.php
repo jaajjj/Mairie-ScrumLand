@@ -18,6 +18,9 @@ switch($page) {
     case 'elus':
         require 'Views/elus.php';
         break;
+    case 'jumelage':
+        require 'Views/jumelage.php';
+        break;
     case 'manifestation':
         require 'Views/manifestation.php';
         break;
