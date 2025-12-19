@@ -19,7 +19,7 @@
         <div class="header-container">
             
             <!-- Logo Modernisé -->
-            <a href="<?php echo getenv('BASE_URL'); ?>" class="logo">
+            <a href="<?php echo $baseUrl ?>" class="logo">
                 <span class="logo-icon">🌲</span>
                 <div class="logo-text">
                     <span class="ville">ScrumLand</span>
@@ -33,7 +33,7 @@
                     
                     <!-- 1. Accueil -->
                     <li class="nav-item">
-                        <a href="<?php echo getenv('BASE_URL'); ?>" class="nav-link">Accueil</a>
+                        <a href="<?php echo $baseUrl ?>" class="nav-link">Accueil</a>
                     </li>
 
                     <!-- 2. Découvrir (Méga Menu) -->
