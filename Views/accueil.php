@@ -142,7 +142,7 @@ require_once __DIR__ . '/Templates/header.php';
                 </li>
                 <li>
                     <span class="label">Mairie (Standard)</span>
-                    <span class="number">01 23 45 67 89</span>
+                    <span class="number">04 91 55 11 11</span>
                 </li>
             </ul>
         </section>
