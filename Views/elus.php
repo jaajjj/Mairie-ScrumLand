@@ -29,7 +29,7 @@ require_once __DIR__ . '/Templates/header.php';
 
             <article class="elu-card">
                 <div class="elu-avatar">
-                    <img src="<?php echo $baseUrl; ?>assets/img/Lucas.jpg" alt="Photo du 2e adjoint">
+                    <img src="<?php echo $baseUrl; ?>assets/img/Lucas.jpg" alt="Photo du 2nd adjoint">
                 </div>
                 <h2>2<sup>e</sup> adjoint</h2>
                 <p class="elu-nom">Lucas Bernard</p>
