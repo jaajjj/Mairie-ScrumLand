@@ -75,7 +75,7 @@
                                 <div class="mega-column">
                                     <h3>Vie Démocratique</h3>
                                     <ul>
-                                        <li><a href="#">Liste des élus</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>index.php?page=elus">Liste des élus</a></li>
                                         <li><a href="#">Conseil Municipal</a></li>
                                     </ul>
                                 </div>

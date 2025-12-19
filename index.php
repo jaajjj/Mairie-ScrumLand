@@ -15,4 +15,7 @@ switch($page) {
     case 'contact':
         require 'Views/contact.php';
         break;
+    case 'elus':
+        require 'Views/elus.php';
+        break;
 }

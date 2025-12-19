@@ -8,7 +8,7 @@ require_once __DIR__ . '/Templates/header.php';
             <div class="carousel-track">
                 <!-- Slide 1 -->
                 <div class="carousel-slide active">
-                    <img src="<?php echo $baseUrl ?>assets/img/ScrumLandLandscape.jpg" alt="Vue panoramique de ScrumLand" class="carousel-image">
+                    <img src="<?php echo $baseUrl ?>Assets/img/ScrumLandLandscape.jpg" alt="Vue panoramique de ScrumLand" class="carousel-image">
                     <div class="overlay"></div>
                     <div class="carousel-content">
                         <h2>Découvrez ScrumLand</h2>
