@@ -76,7 +76,7 @@ require_once __DIR__ . '/Templates/header.php';
         <section class="bloc bloc-actus" id="actus">
             <div class="bloc-header">
                 <h2>Actualités locales</h2>
-                <a href="#" style="font-size: 0.9rem; color: var(--secondary-color); font-weight: bold; text-transform: uppercase;">Voir tout &rarr;</a>
+                <a href="filActu" style="font-size: 0.9rem; color: var(--secondary-color); font-weight: bold; text-transform: uppercase;">Voir tout &rarr;</a>
             </div>
             <div class="grid-actus">
                 <!-- Article 1 -->
@@ -84,11 +84,11 @@ require_once __DIR__ . '/Templates/header.php';
                     <div class="card-date">
                         <span class="day">20</span>
                         <span class="month">JAN</span>
+                        <span class="year">2025</span>
                     </div>
                     <div class="card-content">
                         <h3>Conseil municipal</h3>
                         <p>Prochaine séance du conseil à 18h. Ordre du jour : Aménagement des espaces verts et rénovation de l'église.</p>
-                        <a href="#" class="read-more">Lire l'article &rarr;</a>
                     </div>
                 </article>
 
@@ -97,34 +97,36 @@ require_once __DIR__ . '/Templates/header.php';
                     <div class="card-date">
                         <span class="day">05</span>
                         <span class="month">FÉV</span>
+                        <span class="year">2025</span>
                     </div>
                     <div class="card-content">
                         <h3>Marché des Producteurs</h3>
                         <p>Le marché mensuel aura lieu sur la place du village. Venez découvrir les produits de nos fermes locales.</p>
-                        <a href="#" class="read-more">Lire l'article &rarr;</a>
                     </div>
                 </article>
 
                 <!-- Article 3 -->
                 <article class="card-actu">
                     <div class="card-date">
-                        <span style="font-size: 1.5rem;">∞</span>
+                    <span class="day">18</span>
+                    <span class="month">FÉV</span>
+                    <span class="year">2025</span>
                     </div>
                     <div class="card-content">
                         <h3>Activités Nature & Loisirs</h3>
                         <p>Les inscriptions pour les randonnées et ateliers jardinage sont ouvertes. Profitez du grand air !</p>
-                        <a href="#" class="read-more">Lire l'article &rarr;</a>
                     </div>
                 </article>
             </div>
         </section>
+    
     </div>
 
     <!-- Colonne Latérale (Sidebar) -->
     <aside class="sidebar">
         <!-- Numéros d'urgence -->
         <section class="bloc bloc-urgence">
-            <h2>⚠️ Numéros d’urgence</h2>
+            <h2>Numéros d’urgence</h2>
             <ul>
                 <li>
                     <span class="label">Pompiers</span>
@@ -147,7 +149,7 @@ require_once __DIR__ . '/Templates/header.php';
 
         <!-- Horaires -->
         <section class="bloc bloc-horaires">
-            <h2>🕒 Horaires d'ouverture</h2>
+            <h2>Horaires d'ouverture</h2>
             <div class="horaire-row">
                 <strong>Lundi - Vendredi</strong>
                 <span>08h30 - 17h30</span>
