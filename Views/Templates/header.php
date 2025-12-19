@@ -19,7 +19,7 @@
         <div class="header-container">
             
             <!-- Logo Modernisé -->
-            <a href="<?php echo getenv('BASE_URL'); ?>index.php" class="logo">
+            <a href="<?php echo $baseUrl ?>" class="logo">
                 <span class="logo-icon">🌲</span>
                 <div class="logo-text">
                     <span class="ville">ScrumLand</span>
@@ -33,7 +33,7 @@
                     
                     <!-- 1. Accueil -->
                     <li class="nav-item">
-                        <a href="<?php echo getenv('BASE_URL'); ?>index.php" class="nav-link">Accueil</a>
+                        <a href="<?php echo $baseUrl ?>" class="nav-link">Accueil</a>
                     </li>
 
                     <!-- 2. Découvrir (Méga Menu) -->
@@ -47,18 +47,19 @@
                                         <li><a href="#">Ville d’art </a></li>
                                         <li>
                                             <a href="<?php echo $baseUrl; ?>histoire">
-                                                Histoire de la commune
+                                                L’histoire de la commune
                                             </a>
                                         </li>
 
-                                        <li><a href="<?php echo $baseUrl?>/jumelage">Jumelage</a></li>
+                                        <li><a href="#">Histoire de la commune</a></li>
+                                        <li><a href="<?php echo $baseUrl?>jumelage">Jumelage</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column">
                                     <h3>Culture & Rayonnement</h3>
                                     <ul>
                                         <li><a href="#">Culture</a></li>
-                                        <li><a href="#">La ville en images</a></li>
+                                        <li><a href="<?php echo getenv('BASE_URL'); ?>villeenimages">La ville en images</a></li>
                                         <li><a href="#">Identité visuelle</a></li>
                                     </ul>
                                 </div>

@@ -82,7 +82,7 @@ require_once __DIR__ . '/Templates/header.php';
                 <h3>Coordonnées</h3>
                 <p><strong>Mairie de ScrumLand</strong><br>
                 1 Place de l'Église<br>
-                65000 ScrumLand</p>
+                75000 ScrumLand</p>
                 
                 <ul class="contact-list">
                     <li><i class="fas fa-phone"></i> 01 23 45 67 89</li>
