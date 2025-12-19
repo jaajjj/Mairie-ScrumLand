@@ -79,7 +79,7 @@ require_once __DIR__ . '/Templates/header.php';
         <aside class="sidebar">
 
             <section class="bloc info-bloc">
-                <h3>📍 Coordonnées</h3>
+                <h3>Coordonnées</h3>
                 <p><strong>Mairie de ScrumLand</strong><br>
                 1 Place de l'Église<br>
                 65000 ScrumLand</p>
@@ -92,7 +92,7 @@ require_once __DIR__ . '/Templates/header.php';
             
             <!-- Horaires (Repris de l'accueil) -->
             <section class="bloc bloc-horaires">
-                <h3>🕒 Horaires d'ouverture</h3>
+                <h3>Horaires d'ouverture</h3>
                 <div class="horaire-row">
                     <strong>Lundi - Vendredi</strong>
                     <span>08h30 - 17h30</span>
@@ -108,7 +108,7 @@ require_once __DIR__ . '/Templates/header.php';
 
             <!-- Services Directs -->
             <section class="bloc">
-                <h3>📞 Numéros directs</h3>
+                <h3>Numéros directs</h3>
                 <ul class="direct-lines">
                     <li><strong>Police Municipale :</strong> 01 23 45 67 90</li>
                     <li><strong>Services Techniques :</strong> 01 23 45 67 91</li>
