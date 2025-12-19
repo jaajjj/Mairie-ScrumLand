@@ -134,7 +134,7 @@ require_once __DIR__ . '/Templates/header.php';
     <aside class="sidebar">
         <!-- Bloc Info pratique -->
         <section class="bloc bloc-urgence">
-            <h2>ℹ️ Infos manifestations</h2>
+            <h2>Infos manifestations</h2>
             <ul>
                 <li>
                     <span class="label">Service Événementiel</span>
@@ -149,7 +149,7 @@ require_once __DIR__ . '/Templates/header.php';
 
         <!-- Bloc Accès et lieux -->
         <section class="bloc bloc-horaires">
-            <h2>📍 Lieux fréquents</h2>
+            <h2>Lieux fréquents</h2>
             <div class="horaire-row">
                 <strong>Salle des fêtes</strong>
                 <span>Rue des Tilleuls</span>
