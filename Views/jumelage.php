@@ -35,7 +35,8 @@
         <section class="bloc">
             <h3>Comité de Jumelage</h3>
             <p>Vous souhaitez participer aux échanges ou accueillir une famille étrangère ? Contactez l'association du Comité de Jumelage.</p>
-            <p>📧 <em>jumelage@scrumland.fr</em></p>
+            <br />
+            <p><em>jumelage@scrumland.fr</em></p>
         </section>
     </div>
 </main>
