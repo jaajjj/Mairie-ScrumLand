@@ -31,7 +31,7 @@ require_once __DIR__ . '/Templates/header.php';
                 <div class="elu-avatar">
                     <img src="<?php echo $baseUrl; ?>assets/img/Lucas.jpg" alt="Photo du 2nd adjoint">
                 </div>
-                <h2>2<sup>e</sup> adjoint</h2>
+                <h2>2<sup>nd</sup> adjoint</h2>
                 <p class="elu-nom">Lucas Bernard</p>
                 <p class="elu-fonction">Adjoint à l’urbanisme</p>
                 <p class="elu-contact">l.bernard@scrumland.fr</p>
