@@ -5,6 +5,8 @@ session_start();
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+$baseUrl = $_ENV['BASE_URL'] ?? '';
+
 $page = $_GET['page'] ?? 'accueil';
 switch($page) {
     case 'accueil':
