@@ -445,6 +445,215 @@ footer {
     max-width: 1200px; margin: 4rem auto 0; padding-top: 1.5rem; border-top: 1px solid #1e452e; text-align: center; font-size: 0.85rem; color: #64748b;
 }
 
+
+/* =========================================
+   9. ANIMATIONS (Carrousel)
+   ========================================= */
+
+/* Reset et Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Variables de couleur */
+:root {
+  --primary-green: #2ecc71;
+  --dark-overlay: rgba(0, 0, 0, 0.5);
+  --text-color: #ffffff;
+}
+
+/* --- SECTION CARROUSEL --- */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Hauteur importante pour l'immersion */
+  min-height: 500px;
+  max-height: 800px;
+  overflow: hidden;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+/* Container des slides */
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide individuel */
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s;
+  z-index: 1;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+/* Image de fond avec effet de zoom (Ken Burns) */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.carousel-slide.active .carousel-image {
+  transform: scale(1.1); /* Zoom léger quand actif */
+}
+
+/* Overlay sombre pour lisibilité du texte */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+.carousel-content h2,
+.carousel-content p {
+  color: #fff;
+}
+/* Contenu textuel sur l'image */
+.carousel-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  max-width: 600px;
+  color: var(--text-color);
+  z-index: 3;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  transition-delay: 0.3s; /* Le texte arrive après l'image */
+}
+
+.carousel-slide.active .carousel-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.carousel-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.carousel-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Boutons de navigation (Flèches) */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #000;
+}
+
+.nav-btn.prev {
+  left: 20px;
+}
+.nav-btn.next {
+  right: 20px;
+}
+
+/* Indicateurs (Dots) */
+.carousel-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  background: var(--primary-green);
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 60vh;
+  }
+  .carousel-content h2 {
+    font-size: 2rem;
+    color: white;
+  }
+  .carousel-content h2,
+  .carousel-content p {
+    color: #fff;
+  }
+  .carousel-content {
+    left: 5%;
+    right: 5%;
+    bottom: 15%;
+    text-align: center;
+  }
+  .nav-btn {
+    display: none; /* On cache les flèches sur mobile pour laisser place au swipe (optionnel) ou juste pour épurer */
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 1024px) {
     .header-container { padding: 0 1rem; height: auto; flex-wrap: wrap; }
