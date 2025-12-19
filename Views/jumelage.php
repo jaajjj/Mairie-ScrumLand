@@ -2,7 +2,7 @@
 
 <section class="hero-banner" style="background-color: var(--secondary-color);">
     <div class="hero-content">
-        <h1>ScrumLand à l'International</h1>
+        <h1>ScrumLand à l'international</h1>
         <p>Favoriser les échanges culturels et l'amitié entre les peuples.</p>
     </div>
 </section>
