@@ -77,6 +77,7 @@
                                     <ul>
                                         <li><a href="<?php echo $baseUrl; ?>elus">Liste des élus</a></li>
                                         <li><a href="#">Conseil Municipal</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>manifestation">Calendrier des manifestations</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column">
