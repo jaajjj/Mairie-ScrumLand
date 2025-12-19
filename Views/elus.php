@@ -1,6 +1,6 @@
-<?php 
+<?php
 // Inclusion du header (adaptez le chemin si nécessaire selon votre point d'entrée index.php)
-require_once __DIR__ . '/Templates/header.php'; 
+require_once __DIR__ . '/Templates/header.php';
 ?>
 <section class="page-elus">
     <div class="container">
@@ -44,35 +44,12 @@ require_once __DIR__ . '/Templates/header.php';
         <h2>Chronologie des maires depuis 1950</h2>
 
         <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">1950 - 1962</div>
-                <div class="timeline-content">
-                    <h3>André Morel</h3>
-                    <p>Maire de ScrumLand durant la période d’après-guerre, modernisation des infrastructures de base.</p>
-                </div>
-            </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">1962 - 1978</div>
+                <div class="timeline-date">2020 - Aujourd’hui</div>
                 <div class="timeline-content">
-                    <h3>Louise Carpentier</h3>
-                    <p>Développement des quartiers résidentiels et création de nouvelles écoles.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">1978 - 1990</div>
-                <div class="timeline-content">
-                    <h3>Georges Lemaître</h3>
-                    <p>Impulsion culturelle avec ouverture de la médiathèque municipale.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">1990 - 2005</div>
-                <div class="timeline-content">
-                    <h3>Sophie Verdier</h3>
-                    <p>Développement durable, premiers plans de verdissement de ScrumLand.</p>
+                    <h3>Jean Dupont</h3>
+                    <p>Poursuite de la transition écologique et des projets citoyens participatifs.</p>
                 </div>
             </div>
 
@@ -85,16 +62,42 @@ require_once __DIR__ . '/Templates/header.php';
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">2020 - Aujourd’hui</div>
+                <div class="timeline-date">1990 - 2005</div>
                 <div class="timeline-content">
-                    <h3>Jean Dupont</h3>
-                    <p>Poursuite de la transition écologique et des projets citoyens participatifs.</p>
+                    <h3>Sophie Verdier</h3>
+                    <p>Développement durable, premiers plans de verdissement de ScrumLand.</p>
                 </div>
             </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">1978 - 1990</div>
+                <div class="timeline-content">
+                    <h3>Georges Lemaître</h3>
+                    <p>Impulsion culturelle avec ouverture de la médiathèque municipale.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">1962 - 1978</div>
+                <div class="timeline-content">
+                    <h3>Louise Carpentier</h3>
+                    <p>Développement des quartiers résidentiels et création de nouvelles écoles.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">1950 - 1962</div>
+                <div class="timeline-content">
+                    <h3>André Morel</h3>
+                    <p>Maire de ScrumLand durant la période d’après-guerre, modernisation des infrastructures de
+                        base.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<?php 
-require_once __DIR__ . '/Templates/footer.php'; 
+<?php
+require_once __DIR__ . '/Templates/footer.php';
 ?>
