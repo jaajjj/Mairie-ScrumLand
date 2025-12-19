@@ -52,14 +52,14 @@
                                         </li>
 
                                         <li><a href="#">Histoire de la commune</a></li>
-                                        <li><a href="<?php echo $baseUrl?>/jumelage">Jumelage</a></li>
+                                        <li><a href="<?php echo $baseUrl?>jumelage">Jumelage</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column">
                                     <h3>Culture & Rayonnement</h3>
                                     <ul>
                                         <li><a href="#">Culture</a></li>
-                                        <li><a href="#">La ville en images</a></li>
+                                        <li><a href="<?php echo getenv('BASE_URL'); ?>villeenimages">La ville en images</a></li>
                                         <li><a href="#">Identité visuelle</a></li>
                                     </ul>
                                 </div>

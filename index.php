@@ -30,4 +30,7 @@ switch($page) {
     case 'filActu':
         require 'Views/filActu.php';
         break;
+    case 'villeenimages':
+        require 'Views/villeenimages.php';
+        break;
 }
