@@ -85,7 +85,7 @@ require_once __DIR__ . '/Templates/header.php';
                 75000 ScrumLand</p>
                 
                 <ul class="contact-list">
-                    <li><i class="fas fa-phone"></i> 01 23 45 67 89</li>
+                    <li><i class="fas fa-phone"></i>04 91 55 11 11</li>
                     <li><i class="fas fa-envelope"></i> contact@scrumland.fr</li>
                 </ul>
             </section>
@@ -110,9 +110,9 @@ require_once __DIR__ . '/Templates/header.php';
             <section class="bloc">
                 <h3>Numéros directs</h3>
                 <ul class="direct-lines">
-                    <li><strong>Police Municipale :</strong> 01 23 45 67 90</li>
-                    <li><strong>Services Techniques :</strong> 01 23 45 67 91</li>
-                    <li><strong>CCAS :</strong> 01 23 45 67 92</li>
+                    <li><strong>Police Municipale :</strong> 04 23 45 67 90</li>
+                    <li><strong>Services Techniques :</strong> 04 23 45 67 91</li>
+                    <li><strong>CCAS :</strong> 04 23 45 67 92</li>
                 </ul>
             </section>
 
