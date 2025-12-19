@@ -120,10 +120,7 @@ require_once __DIR__ . '/Templates/header.php';
 
     </main>
 
-    <!-- Footer Simulation -->
-    <footer style="background: var(--primary-color); color: white; padding: 2rem; margin-top: 3rem; text-align: center;">
-        <p>&copy; 2025 Mairie de ScrumLand. Tous droits réservés.</p>
-    </footer>
+    <?php require_once __DIR__ . '/Templates/footer.php'; ?>
 
 </body>
 </html>
