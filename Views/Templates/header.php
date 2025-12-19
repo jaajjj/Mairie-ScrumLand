@@ -58,7 +58,7 @@
                                 <div class="mega-column">
                                     <h3>Culture & Rayonnement</h3>
                                     <ul>
-                                        <li><a href="#">Culture</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>culture">Culture</a></li>
                                         <li><a href="<?php echo getenv('BASE_URL'); ?>villeenimages">La ville en images</a></li>
                                         <li><a href="#">Identité visuelle</a></li>
                                     </ul>

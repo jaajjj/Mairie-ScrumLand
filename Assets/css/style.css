@@ -295,21 +295,21 @@ ul {
     url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80");
   background-size: cover;
   background-position: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 6rem 1rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .hero-content h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 3rem;
   margin-bottom: 1rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.3rem;
   opacity: 0.95;
   max-width: 700px;
@@ -990,112 +990,116 @@ body {
    10. GALERIE MASONRY (Ville en image)
    ========================================= */
 
-   .gallery-container {
-    padding-top: 0;
+.gallery-container {
+  padding-top: 0;
 }
 
 .bloc-transparent {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .gallery-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .gallery-header p {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    font-family: 'Merriweather', serif;
-    font-style: italic;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  font-family: "Merriweather", serif;
+  font-style: italic;
 }
 
 /* Grille CSS Grid avancée */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 250px; /* Hauteur de base */
-    gap: 20px;
-    grid-auto-flow: dense; /* Permet de combler les trous */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 250px; /* Hauteur de base */
+  gap: 20px;
+  grid-auto-flow: dense; /* Permet de combler les trous */
 }
 
 .gallery-item {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    cursor: pointer;
-    background: #ccc; /* Placeholder */
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  background: #ccc; /* Placeholder */
 }
 
 /* Classes pour varier les tailles (Masonry effect) */
 .gallery-item.wide {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .gallery-item.tall {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s ease;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+  display: block;
 }
 
 /* Caption Overlay au survol */
 .gallery-caption {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    color: white;
-    padding: 20px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-    font-weight: 500;
-    font-size: 1.1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 /* Effets au survol */
 .gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    z-index: 10;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .gallery-item:hover .gallery-caption {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* Responsive Galerie */
 @media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
-        grid-auto-rows: 300px;
-    }
-    
-    .gallery-item.wide, 
-    .gallery-item.tall {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    
-    .gallery-header h2 { font-size: 2rem; }
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    grid-auto-rows: 300px;
+  }
+
+  .gallery-item.wide,
+  .gallery-item.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .gallery-header h2 {
+    font-size: 2rem;
+  }
 }
 
 /* Responsive mobile */
@@ -1107,5 +1111,234 @@ body {
 
   .era-text {
     text-align: left;
+  }
+}
+/* =========================================
+   AJOUTS POUR PAGE CULTURE - CHARTE VERTE FONCÉE
+   (À ajouter à la fin de ton CSS global)
+   ======================================== */
+
+/* Page principale avec dégradé vert subtil */
+.culture-page {
+  padding: 40px 6%;
+  background: radial-gradient(
+    circle at top left,
+    rgba(26, 77, 46, 0.05) 0,
+    var(--bg-color) 45%,
+    #ffffff 100%
+  );
+  min-height: calc(100vh - 160px);
+}
+
+/* Intro centrée */
+.culture-intro {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.culture-intro h1 {
+  font-size: 2.4rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+.culture-intro p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Layout grille 2 colonnes */
+.culture-layout {
+  display: grid;
+  grid-template-columns: 2fr 1.4fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .culture-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sections avec tes blocs existants + vert dominant */
+.culture-section {
+  background: var(--menu-bg);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(26, 77, 46, 0.08);
+  margin-bottom: 2rem;
+  border-top: 3px solid var(--primary-color);
+}
+
+.culture-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.culture-section h2::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--accent-color);
+}
+
+/* Événements */
+.culture-events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.culture-event-item {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 77, 46, 0.03),
+    rgba(79, 119, 45, 0.02)
+  );
+  border: 1px solid rgba(26, 77, 46, 0.1);
+  transition: all 0.3s ease;
+}
+
+.culture-event-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 700px) {
+  .culture-event-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+.culture-event-text {
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.culture-event-text span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.culture-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid rgba(26, 77, 46, 0.1);
+}
+
+/* Lieux culturels */
+.culture-venues ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 500px;
+}
+
+.culture_lieu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: var(--radius);
+  background: rgba(26, 77, 46, 0.04);
+  border: 1px solid rgba(26, 77, 46, 0.12);
+  transition: all 0.3s ease;
+}
+
+.culture_lieu:hover {
+  background: rgba(26, 77, 46, 0.08);
+  border-color: var(--primary-color);
+  transform: translateX(4px);
+}
+
+.culture_lieu span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+/* Bouton Maps avec ta charte vert/or */
+.mapsButton {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: none;
+  border-radius: 25px;
+  padding: 0;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.mapsButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
+}
+
+.btn-maps {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 20px;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .culture-page {
+    padding: 2rem 1rem;
+  }
+
+  .culture-event-item,
+  .culture_lieu {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .culture_lieu {
+    flex-direction: column;
   }
 }

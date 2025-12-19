@@ -92,7 +92,7 @@ require_once __DIR__ . '/Templates/header.php';
             
             <!-- Horaires (Repris de l'accueil) -->
             <section class="bloc bloc-horaires">
-                <h2>Horaires d'ouverture</h2>
+                <h2 >Horaires d'ouverture</h2>
                 <div class="horaire-row">
                     <strong>Lundi - Vendredi</strong>
                     <span>08h30 - 17h30</span>

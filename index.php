@@ -33,4 +33,7 @@ switch($page) {
     case 'villeenimages':
         require 'Views/villeenimages.php';
         break;
+    case 'culture':
+        require 'Views/culture.php';
+        break;
 }
