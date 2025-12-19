@@ -27,4 +27,7 @@ switch($page) {
     case 'manifestation':
         require 'Views/manifestation.php';
         break;
+    case 'filActu':
+        require 'Views/filActu.php';
+        break;
 }
