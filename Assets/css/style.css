@@ -923,3 +923,76 @@ body {
   color: #555;
   font-size: 0.95rem;
 }
+.ville-art-hero {
+  padding: 3rem 1rem 2rem;
+  text-align: center;
+}
+
+.ville-art-hero h1 {
+  font-family: "Merriweather", serif;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 1rem;
+}
+
+.ville-art-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Bloc des ères */
+.ville-art-eras {
+  padding: 2rem 1rem 4rem;
+  background: #f7f9fc;
+}
+
+.era-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.era-row:last-child {
+  margin-bottom: 0;
+}
+
+.era-image,
+.era-text {
+  flex: 1 1 280px;
+}
+
+.era-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Variante inversée (image à droite, texte à gauche) */
+.era-row--reverse {
+  flex-direction: row-reverse;
+}
+
+.era-text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.era-text p {
+  margin: 0 0 0.5rem;
+  color: #555;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .era-row,
+  .era-row--reverse {
+    flex-direction: column;
+  }
+
+  .era-text {
+    text-align: left;
+  }
+}
