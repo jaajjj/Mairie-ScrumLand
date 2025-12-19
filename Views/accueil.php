@@ -160,7 +160,7 @@ require_once __DIR__ . '/Templates/header.php';
             </div>
             <div style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
                 📍 1 Place de l'Église<br>
-                65000 ScrumLand
+                75000 ScrumLand
             </div>
         </section>
         

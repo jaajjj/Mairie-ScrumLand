@@ -47,7 +47,7 @@
                                         <li><a href="#">Ville d’art </a></li>
                                         <li>
                                             <a href="<?php echo $baseUrl; ?>histoire">
-                                                Histoire de la commune
+                                                L’histoire de la commune
                                             </a>
                                         </li>
 

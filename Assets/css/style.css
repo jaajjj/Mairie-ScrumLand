@@ -37,9 +37,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-.hero-content{
-    color : white;
-}
+
 h1,
 h2,
 h3,
@@ -302,7 +300,6 @@ ul {
   text-align: center;
   margin-bottom: 3rem;
 }
-
 
 .hero-content h1 {
   color: var(--white);
