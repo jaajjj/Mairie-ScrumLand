@@ -177,5 +177,6 @@ require_once __DIR__ . '/Templates/header.php';
 </main>
 
 <?php 
+// Inclusion du footer
 require_once __DIR__ . '/Templates/footer.php'; 
 ?>
