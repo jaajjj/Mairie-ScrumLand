@@ -151,17 +151,24 @@ require_once __DIR__ . '/Templates/header.php';
         <section class="bloc bloc-horaires">
             <h2>Lieux fréquents</h2>
             <div class="horaire-row">
-                <strong>Salle des fêtes</strong>
-                <span>Rue des Tilleuls</span>
+                <strong class="firstblocks">Salle des fêtes</strong>
             </div>
             <div class="horaire-row">
-                <strong>Parc municipal</strong>
-                <span>Chemin de la Vallée</span>
+                <strong class="firstblocks">Rue des Tilleuls</strong>
             </div>
             <div class="horaire-row">
-                <strong>Place de l'Église</strong>
-                <span>Centre-bourg</span>
+                <strong class="firstblocks">Parc municipal</strong>
             </div>
+            <div class="horaire-row">
+                <strong class="firstblocks">Chemin de la Vallée</strong>
+            </div>
+            <div class="horaire-row">
+                <strong class="firstblocks">Place de l'Église</strong>
+            </div>
+            <div class="horaire-row">
+                <strong class="firstblocks">Centre-bourg</strong>
+            </div>
+
         </section>
 
         <!-- Bloc Rappel calendrier -->
