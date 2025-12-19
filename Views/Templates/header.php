@@ -45,6 +45,13 @@
                                     <h3>Patrimoine & Histoire</h3>
                                     <ul>
                                         <li><a href="#">Ville d’art et d’histoire</a></li>
+                                        <li>
+                                            <a href="<?php echo $baseUrl; ?>histoire">
+                                                L’histoire de la commune
+                                            </a>
+                                        </li>
+
+                                        <li><a href="#">Jumelage</a></li>
                                         <li><a href="#">Histoire de la commune</a></li>
                                         <li><a href="<?php echo $baseUrl?>/jumelage">Jumelage</a></li>
                                     </ul>
