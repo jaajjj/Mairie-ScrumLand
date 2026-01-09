@@ -83,7 +83,6 @@
                                     <h3>Vie Démocratique</h3>
                                     <ul>
                                         <li><a href="<?php echo $baseUrl; ?>elus">Liste des élus</a></li>
-                                        <li><a href="#">Conseil Municipal</a></li>
                                         <li><a href="<?php echo $baseUrl; ?>manifestation">Calendrier des
                                                 manifestations</a></li>
                                     </ul>
@@ -110,7 +109,6 @@
                                     <ul>
                                         <li><a href="<?php echo $baseUrl .'/cantine' ?>">Menu de la cantine</a></li>
                                         <li><a href="<?php echo $baseUrl . 'commerce' ?>">Liste des commerces</a></li>
-                                        <li><a href="#">Numéros d'urgence</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column">
@@ -118,7 +116,6 @@
                                     <ul>
                                         <li><a href="<?php echo $baseUrl; ?>sportsLoisirs">Vie sportive & loisirs</a>
                                         </li>
-                                        <li><a href="#">Page associative</a></li>
                                     </ul>
                                 </div>
                             </div>

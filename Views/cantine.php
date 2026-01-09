@@ -231,7 +231,7 @@ require_once __DIR__ . '/Templates/header.php';
 
         <section class="bloc bloc-horaires">
             <h2>Contact Cantine</h2>
-            <div style="font-size: 0.9rem;">
+            <div style="font-size: 0.9rem; color: black;">
                 <p><strong>Responsable :</strong> Mme Cuisine</p>
                 <p style="margin-top: 5px;">04 23 45 67 95</p>
                 <p style="margin-top: 5px;">cantine@scrumland.fr</p>

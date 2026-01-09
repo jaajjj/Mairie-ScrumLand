@@ -2018,3 +2018,7 @@ body {
   border-radius: 6px;
   margin-bottom: 1rem;
 }
+
+.alert-info {
+  color: black;
+}
