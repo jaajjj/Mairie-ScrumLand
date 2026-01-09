@@ -8,7 +8,7 @@ $dotenv->load();
 $baseUrl = $_ENV['BASE_URL'] ?? '';
 
 $page = $_GET['page'] ?? 'accueil';
-switch($page) {
+switch ($page) {
     case 'accueil':
         require 'Views/accueil.php';
         break;
@@ -35,5 +35,8 @@ switch($page) {
         break;
     case 'culture':
         require 'Views/culture.php';
+        break;
+    case 'sportsLoisirs':
+        require 'Views/sportsLoisirs.php';
         break;
 }

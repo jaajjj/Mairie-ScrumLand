@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <!-- Import de polices modernes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
     <!-- Lien vers la feuille de style CSS -->
     <link rel="stylesheet" href="<?php echo getenv('BASE_URL'); ?>Assets/css/style.css">
 </head>
+
 <body>
 
     <!-- Header Moderne Full Width -->
     <header class="site-header">
         <div class="header-container">
-            
+
             <!-- Logo Modernisé -->
             <a href="<?php echo $baseUrl ?>" class="logo">
                 <span class="logo-icon">🌲</span>
@@ -26,11 +30,11 @@
                     <span class="label">Site officiel de la Mairie</span>
                 </div>
             </a>
-            
+
             <!-- Navigation Principale -->
             <nav class="main-nav">
                 <ul class="nav-list">
-                    
+
                     <!-- 1. Accueil -->
                     <li class="nav-item">
                         <a href="<?php echo $baseUrl ?>" class="nav-link">Accueil</a>
@@ -52,14 +56,15 @@
                                         </li>
 
                                         <li><a href="#">Histoire de la commune</a></li>
-                                        <li><a href="<?php echo $baseUrl?>jumelage">Jumelage</a></li>
+                                        <li><a href="<?php echo $baseUrl ?>jumelage">Jumelage</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column">
                                     <h3>Culture & Rayonnement</h3>
                                     <ul>
                                         <li><a href="<?php echo $baseUrl; ?>culture">Culture</a></li>
-                                        <li><a href="<?php echo getenv('BASE_URL'); ?>villeenimages">La ville en images</a></li>
+                                        <li><a href="<?php echo getenv('BASE_URL'); ?>villeenimages">La ville en
+                                                images</a></li>
                                         <li><a href="#">Identité visuelle</a></li>
                                     </ul>
                                 </div>
@@ -83,7 +88,8 @@
                                     <ul>
                                         <li><a href="<?php echo $baseUrl; ?>elus">Liste des élus</a></li>
                                         <li><a href="#">Conseil Municipal</a></li>
-                                        <li><a href="<?php echo $baseUrl; ?>manifestation">Calendrier des manifestations</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>manifestation">Calendrier des
+                                                manifestations</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column">
@@ -115,7 +121,8 @@
                                 <div class="mega-column">
                                     <h3>Temps Libre</h3>
                                     <ul>
-                                        <li><a href="#">Vie sportive & loisirs</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>sportsLoisirs">Vie sportive & loisirs</a>
+                                        </li>
                                         <li><a href="#">Page associative</a></li>
                                     </ul>
                                 </div>
