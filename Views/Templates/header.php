@@ -48,7 +48,6 @@
                                 <div class="mega-column">
                                     <h3>Patrimoine & Histoire</h3>
                                     <ul>
-                                        <li><a href="#">Ville d’art </a></li>
                                         <li>
                                             <a href="<?php echo $baseUrl; ?>histoire">
                                                 L’histoire de la commune
@@ -63,7 +62,6 @@
                                         <li><a href="<?php echo $baseUrl; ?>culture">Culture</a></li>
                                         <li><a href="<?php echo getenv('BASE_URL'); ?>villeenimages">La ville en
                                                 images</a></li>
-                                        <li><a href="#">Identité visuelle</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column highlight">
@@ -93,7 +91,6 @@
                                 <div class="mega-column">
                                     <h3>Services & Démarches</h3>
                                     <ul>
-                                        <li><a href="#">Démarches administratives</a></li>
                                         <li><a href="#">Location de salles communales</a></li>
                                         <li><a href="#">Bulletins municipaux</a></li>
                                         <li><a href="<?php echo $baseUrl; ?>filActu">Fil d'actualité</a></li>
