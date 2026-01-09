@@ -1342,3 +1342,170 @@ body {
     flex-direction: column;
   }
 }
+
+/* Assets/css/commerce.css */
+/* Utilise les variables définies dans Assets/css/style.css */
+.commerce-page .hero-small {
+  background: linear-gradient(180deg, rgba(5, 65, 30, 0.815), rgba(11, 97, 30, 0.651));
+  padding: 2.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.commerces-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Grid of commerce cards */
+.commerces-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .commerces-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.commerce-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--menu-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border-top: 3px solid transparent;
+}
+
+.commerce-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-top-color: var(--accent-color);
+}
+
+.commerce-media {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.commerce-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.commerce-card:hover .commerce-media img {
+  transform: scale(1.03);
+}
+
+.commerce-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.commerce-body h2 {
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tag {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.meta {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.desc {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.info-list {
+  margin-top: 0.6rem;
+  display: grid;
+  gap: 0.25rem;
+  color: var(--text-light);
+  font-size: 0.92rem;
+}
+
+.card-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.btn-map {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.btn-map:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-dark);
+}
+
+.btn-more {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  background: var(--accent-color);
+  color: #3e3000;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.sidebar .bloc {
+  background: var(--menu-bg);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-form label {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.filter-form select {
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.commerce-page .btn-primary {
+  width: 100%;
+  text-align: center;
+}
