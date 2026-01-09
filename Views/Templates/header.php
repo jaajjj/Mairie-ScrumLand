@@ -122,11 +122,6 @@
                         </div>
                     </li>
 
-                    <!-- 5. Agenda -->
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Agenda</a>
-                    </li>
-
                     <!-- 6. Contact -->
                     <li class="nav-item">
                         <a href="./contact" class="nav-link btn-contact">Contact</a>
