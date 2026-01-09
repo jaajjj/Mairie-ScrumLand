@@ -64,12 +64,6 @@
                                                 images</a></li>
                                     </ul>
                                 </div>
-                                <div class="mega-column highlight">
-                                    <div class="highlight-card">
-                                        <span class="icon">📸</span>
-                                        <p>Découvrez notre galerie photo interactive.</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </li>
