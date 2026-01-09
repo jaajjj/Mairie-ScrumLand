@@ -57,7 +57,7 @@
 
                                         <li><a href="#">Histoire de la commune</a></li>
                                         <li><a href="<?php echo $baseUrl ?>jumelage">Jumelage</a></li>
-                                        <li><a href="<?php echo $baseUrl?>jumelage">Jumelage</a></li>
+                                        <li><a href="<?php echo $baseUrl ?>jumelage">Jumelage</a></li>
                                     </ul>
                                 </div>
                                 <div class="mega-column">
@@ -98,7 +98,7 @@
                                     <ul>
                                         <li><a href="#">Démarches administratives</a></li>
                                         <li><a href="#">Location de salles communales</a></li>
-                                        <li><a href="#">Bulletins municipaux</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>bulletins">Bulletins municipaux</a></li>
                                         <li><a href="<?php echo $baseUrl; ?>filActu">Fil d'actualité</a></li>
                                     </ul>
                                 </div>
@@ -114,7 +114,7 @@
                                 <div class="mega-column">
                                     <h3>Au Quotidien</h3>
                                     <ul>
-                                        <li><a href="<?php echo $baseUrl .'/cantine' ?>">Menu de la cantine</a></li>
+                                        <li><a href="<?php echo $baseUrl . '/cantine' ?>">Menu de la cantine</a></li>
                                         <li><a href="#">Liste des commerces</a></li>
                                         <li><a href="#">Numéros d'urgence</a></li>
                                     </ul>
