@@ -45,4 +45,7 @@ switch ($page) {
     case 'cantine':
         require 'Views/cantine.php';
         break;
+    case 'location':
+        require 'Views/location.php';
+        break;
 }
