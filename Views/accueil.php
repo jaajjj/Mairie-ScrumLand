@@ -158,7 +158,7 @@ require_once __DIR__ . '/Templates/header.php';
                 <strong>Samedi matin</strong>
                 <span>09h00 - 12h00</span>
             </div>
-            <div style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem;">
+            <div style="color: black;">
                 📍 1 Place de l'Église<br>
                 75000 ScrumLand
             </div>
