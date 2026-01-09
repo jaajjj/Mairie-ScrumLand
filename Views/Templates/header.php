@@ -90,7 +90,7 @@
                                         <li><a href="#">Démarches administratives</a></li>
                                         <li><a href="#">Location de salles communales</a></li>
                                         <li><a href="#">Bulletins municipaux</a></li>
-                                        <li><a href="#">Fil d'actualité</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>filActu">Fil d'actualité</a></li>
                                     </ul>
                                 </div>
                             </div>
