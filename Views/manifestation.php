@@ -89,7 +89,6 @@ require_once __DIR__ . '/Templates/header.php';
                             Lieu : Salle des fêtes – 15h00 à 18h00<br>
                             Organisateur : Comité des fêtes
                         </p>
-                        <a href="#" class="read-more">Détails &rarr;</a>
                     </div>
                 </article>
 
@@ -108,7 +107,6 @@ require_once __DIR__ . '/Templates/header.php';
                             Lieu : Départ place de l’Église – 9h00<br>
                             Organisateur : Association Rando & Nature
                         </p>
-                        <a href="#" class="read-more">Détails &rarr;</a>
                     </div>
                 </article>
 
@@ -127,7 +125,6 @@ require_once __DIR__ . '/Templates/header.php';
                             Lieu : Parc municipal – 10h00 à 18h00<br>
                             Organisateur : Service Vie associative
                         </p>
-                        <a href="#" class="read-more">Détails &rarr;</a>
                     </div>
                 </article>
             </div>
