@@ -36,6 +36,9 @@ switch ($page) {
     case 'culture':
         require 'Views/culture.php';
         break;
+    case 'commerce':
+        require 'Views/commerce.php';
+        break;
     case 'sportsLoisirs':
         require 'Views/sportsLoisirs.php';
         break;
