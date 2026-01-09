@@ -1385,3 +1385,75 @@ body {
   display: block;
   margin-bottom: 0.5rem;
 }
+
+/* Page cantine */
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu-card {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        transition: transform 0.2s;
+    }
+    .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .menu-header {
+        background-color: var(--secondary-color, #4CAF50); /* Fallback green */
+        color: white;
+        padding: 0.8rem;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .menu-body {
+        padding: 1.5rem;
+    }
+
+    .plat-row {
+        margin-bottom: 0.8rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .plat-icon {
+        margin-right: 10px;
+        font-size: 1.2rem;
+        width: 25px;
+        text-align: center;
+    }
+
+    .plat-name {
+        font-size: 0.95rem;
+        color: #333;
+    }
+
+    .label-bio {
+        background-color: #8bc34a;
+        color: white;
+        font-size: 0.7rem;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+    .reservation-alert {
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        color: #856404;
+        font-size: 0.9rem;
+    }
