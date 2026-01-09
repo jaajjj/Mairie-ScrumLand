@@ -108,7 +108,7 @@
                                     <h3>Au Quotidien</h3>
                                     <ul>
                                         <li><a href="#">Menu de la cantine</a></li>
-                                        <li><a href="#">Liste des commerces</a></li>
+                                        <li><a href="commerce">Liste des commerces</a></li>
                                         <li><a href="#">Numéros d'urgence</a></li>
                                     </ul>
                                 </div>
