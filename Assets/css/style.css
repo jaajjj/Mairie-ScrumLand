@@ -1342,3 +1342,46 @@ body {
     flex-direction: column;
   }
 }
+/* map */
+/* --- Styles pour la page Jumelage --- */
+
+/* Carte Interactive */
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  z-index: 1; /* S'assure que la carte reste sous le menu s'il est déroulant */
+}
+
+.map-caption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+}
+
+/* Bannière spécifique */
+.hero-jumelage {
+  background-color: var(
+    --secondary-color
+  ); /* Assure-toi que cette variable est définie ailleurs */
+}
+
+/* Grille des villes partenaires */
+.partners-grid {
+  margin-top: 2rem;
+  display: flex; /* Optionnel : pour aligner si .elus-grid ne le fait pas déjà */
+  gap: 20px; /* Espace entre les cartes */
+  justify-content: center;
+}
+
+.partner-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.flag-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
