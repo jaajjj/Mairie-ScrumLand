@@ -18,7 +18,7 @@ require_once __DIR__ . '/Templates/header.php';
         <!-- 1. ScrumLand rurale (années 1950) -->
         <article class="era-row">
             <div class="era-image">
-                <img src="<?php echo $baseUrl; ?>assets/img/1.jpg" alt="ScrumLand dans les années 1950">
+                <img src="https://imgs.search.brave.com/XsSVTjJO98MATmE2C5rAcEZTqiQJhfOwwi2l4srrXwI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5zdWRvdWVzdC5m/ci8yMjY1MzE4OS8x/MjAweC0xLzJmaTc5/OS1oYWxsZXMtZGUt/cGF1LTE5NjcuanBn/P3Y9MTczNzIwODgw/MA">
             </div>
             <div class="era-text">
                 <h2>Années 1950 – Les racines rurales</h2>
@@ -36,7 +36,7 @@ require_once __DIR__ . '/Templates/header.php';
         <!-- 2. Essor industriel (1970–1990) -->
         <article class="era-row era-row--reverse">
             <div class="era-image">
-                <img src="<?php echo $baseUrl; ?>assets/img/2.jpg" alt="ScrumLand industrielle dans les années 1970">
+                <img src="https://imgs.search.brave.com/ficOQbTRhUA7ZQzmUcJLaAjVMNOXRJabzMg2_aWqcaY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2xhc3NpY2NvdXJz/ZXMuZnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjMvMDUvRWN1/cmllLU1hc2VyYXRp/LUdQLWRlLVBhdTE5/NTUtJUMyJUE5LURS/LnBuZw" alt="ScrumLand industrielle dans les années 1970">
             </div>
             <div class="era-text">
                 <h2>1970 – 1990 : L’essor industriel</h2>
@@ -54,7 +54,7 @@ require_once __DIR__ . '/Templates/header.php';
         <!-- 3. Culture & patrimoine (1990–2010) -->
         <article class="era-row">
             <div class="era-image">
-                <img src="<?php echo $baseUrl; ?>assets/img/era-1990.jpeg" alt="Vie culturelle et festivals à ScrumLand">
+                <img src="https://imgs.search.brave.com/mA-PmCJK5Wt2-rbRp7m1AgUDPUzX7-zO4NRV2AgcsoM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93b29k/eS5jbG91ZGx5LnNw/YWNlL2FwcC91cGxv/YWRzL3BhdS8yMDI0/LzA2L3RodW1icy9t/dXNlZS1iZWF1eC1h/cnRzLXBhdS0wMy02/NDB4MzYwLWNyb3At/MTcxOTMyNjg1Mi53/ZWJw" alt="Vie culturelle et festivals à ScrumLand">
             </div>
             <div class="era-text">
                 <h2>1990 – 2010 : Le réveil culturel</h2>
@@ -71,7 +71,7 @@ require_once __DIR__ . '/Templates/header.php';
 
         <article class="era-row era-row--reverse">
             <div class="era-image">
-                <img src="<?php echo $baseUrl; ?>assets/img/ScrumLandLandscape.jpg" alt="ScrumLand ville connectée et durable">
+                <img src="https://imgs.search.brave.com/NB4SGb9L0-20dv3YvF7Fx9T2efTpjskwaB56j4p0xxw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93b29k/eS5jbG91ZGx5LnNw/YWNlL2FwcC91cGxv/YWRzL3BhdS8yMDI0/LzA1L3RodW1icy9n/YXZlLWRlLXBhdS1w/b250LTE0LWp1aWxs/ZXQtY2hhdGVhdS1w/YXUtMS02NDB4MzIw/LndlYnA" alt="ScrumLand ville connectée et durable">
             </div>
             <div class="era-text">
                 <h2>2010 – Aujourd’hui : Ville créative et connectée</h2>
