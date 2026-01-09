@@ -143,7 +143,6 @@ require_once __DIR__ . '/Templates/header.php';
                     <div class="card-content">
                         <h3>Cérémonie du 11 Novembre</h3>
                         <p>Commémoration officielle au monument aux morts, suivie d’un verre de l’amitié en mairie.</p>
-                        <a href="#" class="read-more">Voir le compte-rendu &rarr;</a>
                     </div>
                 </article>
             </div>
