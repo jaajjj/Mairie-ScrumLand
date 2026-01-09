@@ -91,7 +91,7 @@
                                 <div class="mega-column">
                                     <h3>Services & Démarches</h3>
                                     <ul>
-                                        <li><a href="#">Location de salles communales</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>location">Location de salles communales</a></li>
                                         <li><a href="<?php echo $baseUrl; ?>bulletins">Bulletins municipaux</a></li>
                                         <li><a href="<?php echo $baseUrl; ?>filActu">Fil d'actualité</a></li>
                                     </ul>
