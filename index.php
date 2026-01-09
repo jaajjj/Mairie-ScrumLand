@@ -42,6 +42,9 @@ switch ($page) {
     case 'bulletins':
         require 'Views/bulletins.php';
         break;
+    case 'mentionsLegales':
+        require 'Views/mentionsLegales.php';
+        break;
     case 'cantine':
         require 'Views/cantine.php';
         break;
